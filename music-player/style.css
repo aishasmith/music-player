@@ -1,0 +1,139 @@
+/* Image Credits -Images created by: https://unsplash.com/@pawel_czerwinski */
+
+/* Google Fonts Roboto 400 & 700 */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/* Base */
+html {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: #0f1720;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Roboto', sans-serif;
+  font-size: 12px;
+  color: #fff;
+}
+
+/* Player Container */
+.player-container {
+  height: 500px; 
+  width: 400px;
+  background: #14191f;
+  border-radius: 20px;
+  box-shadow: 0 5px 30px 5px rgba(0, 0, 0, 0.5);
+}
+
+/* Image Container */
+.img-container {
+  height: 300px;
+  width: 300px;
+  position: relative;
+  top: -50px;
+  left: 50px;
+}
+
+/* Image Container */
+.img-container img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+/*Typography*/
+h2 {
+  font-size: 25px;
+  text-align: center;
+  margin: 0;
+}
+
+h3 {
+  font-size: 20px;
+  text-align: center;
+  font-weight: 400;
+  margin: 5px 0 0;
+}
+
+/* Progress Bar */
+.progress-container {
+  background: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 40px 20px;
+  height: 4px;
+  width: 90%;
+}
+
+.progress {
+  background: #242323;
+  border-radius: 5px;
+  height: 100%;
+  /* change this to show progress */
+  width: 0%;
+  transition: width 0.1s linear;
+}
+
+/* Duration Wrapper */
+.duration-wrapper {
+  position: relative;
+  top: -25px;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Player Controls */
+.player-controls {
+  position: relative;
+  top: -15px;
+  left: 120px;
+  width: 200px;
+}
+
+/* Font Awesome Icons */
+.fas {
+  font-size: 30px;
+  color: rgb(129, 129, 129);
+  margin-left: 20px;
+  cursor: pointer;
+  user-select: none;
+} 
+
+.fas:hover {
+   filter: brightness(50%);
+}  
+
+.main-button {
+  font-size: 40px;
+  position: relative;
+  top: 3px;
+}
+
+/* Media Query: iPhone 480px (Vertical) */
+@media screen and (max-width: 480px) {
+  .player-container {
+    width: 95vw;
+  } 
+
+  .img-container {
+    left: 29px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  h3 {
+    font-size: 15px;
+  }
+
+  .player-controls {
+    top: -10px;
+    left: 100px;
+  }
+}
